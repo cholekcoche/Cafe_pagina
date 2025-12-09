@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlaza el CSS -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  </head>
+<body>
+  <div class="todo">
+
+  <div class="encabezado">
+    <div class="barra">
+        <h1>MUNDO CAFÉ</h1>
+    </div>
+    <div class="grid">
+
+      <div class="caja">caja 1</div>
+
+      <div class="caja">caja 2</div>
+
+      <div class="caja">
+
+        <div class="caja_A"> Bienvenid@, aquí probaras el mejor café</div>
+        <div class="caja_B">
+            <img class="ImagenTamaño" src="Imagenes/Logo_taza.jpg" alt="Una vuena taza de café" style="border-radius: 10px;">
+          </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="Apartado">
+    <div class="grid_espacio">
+      <div>
+        <div class="Fondo_Blanco"><h2>MUNDO CAFÉ, ¿como empezo?</h2></div>
+        <div></div>
+      </div>
+      
+      <div class="Derecha_float">
+        <p></p>
+        <model-viewer src="models/Coffee_cup.glb"
+            src="models/Coffee_cup.glb"
+            alt="Mi modelo"
+            auto-rotate
+            style="width: 400px; height: 400px;"
+            camera-orbit="50deg 70deg 2.5m">
+          </model-viewer>
+        </div>
+    </div>
+
+
+
+    </div>
+
+
+  </div> <!-- No tocar, este es el div de toda la pagina para insertar una animación de aparición.-->
+
+
+</body>
+</html>

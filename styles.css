@@ -1,0 +1,135 @@
+body {
+    background: linear-gradient(-45deg, #3FAB93, #61ED55, #5785BD, #5FBD57);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    font-family: "TipografiaTitulo", cursive, sans-serf;
+}
+
+.encabezado{
+  width: auto;
+  height: auto;
+  background-color: #DCDDDE;
+  border-radius: 40px;
+  overflow: hidden;
+  padding: 0px;
+
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    gap: 1px; /* espacio entre cajas */
+    border-color: black;
+    border-width: thin;
+}
+
+.grid_espacio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}
+
+.caja {
+    opacity: 1;
+    padding: 20px;
+    text-align: center;
+    border: 0px solid #333;
+}
+
+
+
+.barra {
+  background: linear-gradient(to left, #170202, #542211);
+  width: auto;
+  height: auto;
+  border-radius: 40px 40px 0 0;
+
+}
+
+.caja_A {
+  padding: 10px;
+  margin-bottom: auto;
+}
+
+.caja_B{
+  padding: 10px;
+
+}
+
+
+
+.Apartado{
+  margin-top: 10px;
+  width: auto;
+  height: auto;
+  
+}
+
+.Fondo_Blanco{
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  padding: 1px;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+.barra h1 {
+  margin: 0;               /* eliminar espacio del h1 */
+  padding: 20px 0;
+  text-align: left;
+  padding: 20px;
+}
+
+.todo {
+  opacity: 0;
+  animation: aparecer 2s forwards;
+}
+
+.SinFondo {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.ImagenTamaño {
+  height: auto;
+  width: 150px;
+}
+
+.Derecha_float {
+ justify-self: right;
+}
+
+
+@keyframes aparecer {
+
+  to {
+    opacity: 1
+  }
+
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@font-face {
+    font-family: 'TipografiaTitulo'; /* nombre que usarás en CSS */
+    src: url('fonts/StretchPro.otf') format('truetype'); /* ruta y formato */
+    font-weight: normal; /* normal, bold, etc. */
+    font-style: normal;  /* normal, italic, etc. */
+}
