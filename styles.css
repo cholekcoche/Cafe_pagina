@@ -107,6 +107,106 @@ h1 {
 }
 
 
+
+.Vaso_generico {
+    margin-left: 20px;
+}
+
+
+.tapa {
+    background-color: rgb(68, 12, 12);
+    height: 100px;
+    width: 290px;
+    transform: perspective(200px) rotateX(10deg) translateX(1%);
+    
+    
+}
+
+
+.vaso {
+    background-color: grey;
+    width: 300px;
+    height: 500px;
+    transform: perspective(200px) rotateX(-10deg);
+    transform-origin: top;
+    margin-top: 20px;
+    position: relative;
+
+    
+}
+
+.cafe {
+
+
+
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+
+    margin-top: 50px;
+    color: black;
+    
+    background-color: rgb(46, 10, 10);
+    
+    z-index: 1;
+}
+
+
+.esfera{
+    background-color: rgba(46, 10, 10);
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 30%;
+    animation: ola 4s linear infinite;
+    
+}
+
+.texto{
+      box-sizing: border-box;   /* incluye padding dentro del ancho */
+  
+  word-wrap: break-word;    /* permite romper palabras largas */
+  word-break: break-word;   /* compatible con todos los navegadores */
+  white-space: normal;
+  font-size:x-large;      /* permite saltos de línea automáticos */
+}
+
+.texto2{
+      box-sizing: border-box;   /* incluye padding dentro del ancho */
+  
+  word-wrap: break-word;    /* permite romper palabras largas */
+  word-break: break-word;   /* compatible con todos los navegadores */
+  white-space: normal;
+  font-size:xx-large;      /* permite saltos de línea automáticos */
+}
+
+.esfera:nth-child(2) { animation-delay: 0s; }
+.esfera:nth-child(3) { animation-delay: 0.3s; }
+.esfera:nth-child(4) {animation-delay: 0.6s;}
+.esfera:nth-child(5) { animation-delay: 0.9s; }
+
+@keyframes ola{
+    0%{
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(-20px);
+    }
+    50%{
+        transform: translateY(-40px);
+    }
+    75%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
 @keyframes aparecer {
 
   to {
