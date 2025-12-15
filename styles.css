@@ -1,4 +1,7 @@
 
+
+/* Id */
+
 #CLeche{
   opacity: 0;
   animation-delay: 2.5s
@@ -13,75 +16,8 @@
   opacity: 0;
 }
 
-body {
-    background: linear-gradient(-45deg, #3FAB93, #61ED55, #5785BD, #5FBD57);
-    background-size: 400% 400%;
-    animation: gradientAnimation 20s ease infinite;
-    font-family: Arial, sans-serif;
-}
-
-h1 {
-    color: black;
-    text-align: center;
-    font-family: "TipografiaTitulo", cursive, sans-serf;
-}
-
-.encabezado{
-  width: auto;
-  height: auto;
-  background-color: #DCDDDE;
-  border-radius: 40px;
-  overflow: hidden;
-  padding: 0px;
-
-
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
-    gap: 1px; /* espacio entre cajas */
-    border-color: black;
-    border-width: thin;
-}
-
-.grid_espacio {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 10px;
-}
-
-
-
-.caja {
-    opacity: 1;
-    padding: 20px;
-    text-align: center;
-    border: 0px solid #333;
-}
-
-
-
-.barra {
-  background: linear-gradient(to left, #170202, #542211);
-  width: auto;
-  height: auto;
-  border-radius: 40px 40px 0 0;
-
-}
-
-.caja_A {
-  padding: 10px;
-  margin-bottom: auto;
-}
-
-.caja_B{
-  padding: 10px;
-
-}
-
-
-
+/* class*/
+/* A*/ 
 .Apartado{
   margin-top: 10px;
   width: auto;
@@ -89,133 +25,36 @@ h1 {
   
 }
 
-.Fondo_Blanco{
-  background-color: white;
-  color: black;
-  border-radius: 10px;
-  padding: 1px;
-  margin-left: 10px;
-  padding-left: 10px;
+/* B*/
+.Bajar{
+  animation: Bajar 2s ease-in-out forwards;
+  pointer-events: all;
+  
+}
+
+.barra {
+  background: linear-gradient(to left, #170202, #542211);
+  width: auto;
+  height: auto;
+  border-radius: 40px 40px 0 0;
+  
 }
 
 .barra h1 {
-  margin: 0;               /* eliminar espacio del h1 */
-  padding: 20px 0;
+  margin: 0;               
   text-align: left;
   padding: 20px;
 }
 
-.todo {
-  opacity: 0;
-  animation: aparecer 2s forwards;
+body {
+    background: linear-gradient(-45deg, #3FAB93, #61ED55, #5785BD, #5FBD57);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+    font-family: Arial, sans-serif;
 }
-
-.SinFondo {
-  background-color: rgba(0, 0, 0, 1);
-}
-
-.ImagenTamaño {
-  height: auto;
-  width: 150px;
-}
-
-.Derecha_float {
- justify-self: right;
-}
-
-
-
-.Vaso_generico {
-    margin-left: 20px;
-}
-
-
-.tapa {
-    background-color: rgb(68, 12, 12);
-    height: 100px;
-    width: 290px;
-    transform: perspective(200px) rotateX(10deg) translateX(1%);
-    box-shadow: 8px 0px 10px rgba(0, 0, 0, 0.6);
-    
-    
-}
-
-
-.vaso {
-    background-color: grey;
-    width: 300px;
-    height: 500px;
-    transform: perspective(200px) rotateX(-10deg);
-    transform-origin: top;
-    margin-top: 20px;
-    position: relative;
-    box-shadow: 10px 20px 40px rgba(0,0,0,0.7);
-    background: linear-gradient(to bottom, #b1afaf, #818181);
-    
-    
-  }
-
-  .cafe {
-    
-    
-    
-    height: 300px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    
-    margin-top: 50px;
-    color: black;
-    
-    background-color: rgb(46, 10, 10);
-    
-    background: linear-gradient(to top, #361515, #2e0a0a);
-    z-index: 1;
-    
-}
-
-
-.esfera{
-    background-color: rgba(46, 10, 10);
-    border-top-left-radius: 100%;
-    border-top-right-radius: 100%;
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 30%;
-    animation: ola 4s ease-in-out infinite;
-    
-}
-
-.texto{
-      box-sizing: border-box;   /* incluye padding dentro del ancho */
-  
-  word-wrap: break-word;    /* permite romper palabras largas */
-  word-break: break-word;   /* compatible con todos los navegadores */
-  white-space: normal;
-  font-size:x-large;      /* permite saltos de línea automáticos */
-}
-
-.texto2{
-      box-sizing: border-box;   /* incluye padding dentro del ancho */
-  
-  word-wrap: break-word;    /* permite romper palabras largas */
-  word-break: break-word;   /* compatible con todos los navegadores */
-  white-space: normal;
-  font-size:xx-large;      /* permite saltos de línea automáticos */
-}
-
-.esfera:nth-child(2) { animation-delay: 0s; }
-.esfera:nth-child(3) { animation-delay: 0.3s; }
-.esfera:nth-child(4) {animation-delay: 0.6s;}
-.esfera:nth-child(5) { animation-delay: 0.9s; }
-
-
-
-
 
 .boton{
- width: 200px;
+  width: 200px;
   height: auto;
   margin: 10px;
   line-height: 20px;
@@ -235,58 +74,140 @@ h1 {
   transform: scale(0.9);
 }
 
+/*C */
+.cafe {
+  height: 300px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;    
+  margin-top: 50px;
+  color: black;
+  z-index: 1;
+    
+}
+
+.caja {
+    opacity: 1;
+    padding: 20px;
+    text-align: center;
+    border: 0px solid #333;
+}
+
+.caja_A {
+  padding: 10px;
+  margin-bottom: auto;
+}
+
+.caja_B{
+  padding: 10px;
+
+}
 
 
-
-.flecha{
+.Ccolor {
   position: relative;
-  background-color: rgb(94, 27, 27, 0);
-  width: 20px;
-  height: 5px;
-  transform: translate(-45px, -10px) rotate(0deg);
+  height: 200px;
+  width: 200px;
+  transform: translate(-7px, 0px);
+  text-align: center;
+  padding-top: 10px;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  animation: colorcafe 8s linear infinite;
+}
+
+/* D */
+
+.Derecha_float {
+  justify-self: right;
+}
+
+/* E */
+
+.encabezado{
+  width: auto;
+  height: auto;
+  background-color: #DCDDDE;
+  border-radius: 40px;
+  overflow: hidden;
+  padding: 0px;
+}
+
+.esfera{
+    
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 30%;
+  animation: ola 4s ease-in-out infinite;
+    
+}
   
-
-}
-
-.flecha::after{
-  background-color: rgb(0, 0, 0);
-  width: 20px;
-  height: 5px;
-  position: absolute;
-  content: "";
-  transform-origin: right;
-  transform: rotate(25deg);
-  border-radius: 20px;
-}
-
-.flecha::before{
-  background-color: rgb(0, 0, 0);
-  width: 20px;
-  height: 5px;
-  position: absolute;
-  content: "";
-  transform-origin: right;
-  transform: rotate(-25deg);
-  border-radius: 20px;
-}
-
+.esfera:nth-child(2) { animation-delay: 0s; }
+.esfera:nth-child(3) { animation-delay: 0.3s; }
+.esfera:nth-child(4) {animation-delay: 0.6s;}
+.esfera:nth-child(5) { animation-delay: 0.9s; }
+  
 .espacioboton{
-  position: relative;
+    position: relative;
   width: 200px;
   height: 80px;
   text-align: center;
   padding-top: 30px;
   overflow: hidden;
 }
-.Bajar{
-  animation: Bajar 2s ease-in-out forwards;
+
+/* F */
+
+.Fondo_Blanco{
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  padding: 1px;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+/* G */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    gap: 1px; /* espacio entre cajas */
+    border-color: black;
+    border-width: thin;
+}
+
+.grid_espacio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}
+
+
+/* H */
   
+html {
+  scroll-behavior:smooth;
 }
 
-.Subir{
-  animation: Subir 2s ease-in-out forwards;
+h1 {
+    color: black;
+    text-align: center;
+    font-family: "TipografiaTitulo", cursive, sans-serf;
+  }
+  
+  /* I */
+  
+.ImagenTamaño {
+  height: auto;
+  width: 150px;
 }
-
+  
+  /* O */
+  
 .ola {
   position: absolute;
   width: 400px;
@@ -325,9 +246,9 @@ h1 {
   animation: avance 5s linear infinite;
   
 }
-
-
-
+  
+  
+  
 .ola2 {
   position: absolute;
   width: 400px;
@@ -338,7 +259,7 @@ h1 {
     100% 0%,   /* esquina superior derecha */
     100% 100%, /* esquina inferior derecha */
     0% 100%,   /* esquina inferior izquierda */
-
+  
     /* onda arriba */
   0% 70%,
   5% 72%,
@@ -352,24 +273,24 @@ h1 {
   80% 74%,
   90% 78%,
   100% 82%
-
+  
   );
   transform: translate(-7px, -70px);
   animation-delay: 2s;
   animation: avance 5s linear infinite;
 }
-
+  
 .ola3 {
   position: absolute;
   width: 400px;
   height: 70px;
-  
+    
   clip-path: polygon(
     100% 0%,     /* esquina superior izquierda */
     100% 0%,   /* esquina superior derecha */
     100% 100%, /* esquina inferior derecha */
     0% 100%,   /* esquina inferior izquierda */
-
+  
     /* onda arriba */
   0% 60%,
   5% 68%,
@@ -390,25 +311,82 @@ h1 {
   80% 65%,
   90% 60%,
   100% 65%
-
+  
   );
   transform: translate(-7px, -70px);
   animation-delay: 1s;
   animation: avance 5s linear infinite;
 }
+  
 
-.Ccolor {
-  position: relative;
-  height: 200px;
-  width: 200px;
-  transform: translate(-7px, 0px);
-  text-align: center;
-  padding-top: 10px;
-  color: white;
-  font-family: 'Courier New', Courier, monospace;
-  animation: colorcafe 8s linear infinite;
+/* S */
+
+.SinFondo {
+  background-color: rgba(0, 0, 0, 1);
 }
 
+.Subir{
+  animation: Subir 2s ease-in-out forwards;
+  pointer-events: none;
+}
+
+/* T */
+
+.tapa {
+    background-color: rgb(68, 12, 12);
+    height: 100px;
+    width: 290px;
+    transform: perspective(200px) rotateX(10deg) translateX(1%);
+    box-shadow: 8px 0px 10px rgba(0, 0, 0, 0.6);
+    
+    
+}
+
+.todo {
+  opacity: 0;
+  animation: aparecer 2s forwards;
+}
+
+.texto{
+      box-sizing: border-box;   /* incluye padding dentro del ancho */
+  
+  word-wrap: break-word;    /* permite romper palabras largas */
+  word-break: break-word;   /* compatible con todos los navegadores */
+  white-space: normal;
+  font-size:x-large;      /* permite saltos de línea automáticos */
+}
+
+.texto2{
+      box-sizing: border-box;   /* incluye padding dentro del ancho */
+  
+  word-wrap: break-word;    /* permite romper palabras largas */
+  word-break: break-word;   /* compatible con todos los navegadores */
+  white-space: normal;
+  font-size:xx-large;      /* permite saltos de línea automáticos */
+}
+
+/* V */
+
+.Vaso_generico {
+    margin-left: 20px;
+}
+
+.vaso {
+  background-color: grey;
+  width: 300px;
+  height: 500px;
+  transform: perspective(200px) rotateX(-10deg);
+  transform-origin: top;
+  margin-top: 20px;
+  position: relative;
+  box-shadow: 10px 20px 40px rgba(0,0,0,0.7);
+  background: linear-gradient(to bottom, #b1afaf, #818181);
+    
+    
+}
+
+
+/*Animaciones */
 
 @keyframes avance{
   0%{
@@ -518,7 +496,7 @@ h1 {
 }
 
 
-
+/*Fuentes */
 
 @font-face {
     font-family: 'TipografiaTitulo'; /* nombre que usarás en CSS */

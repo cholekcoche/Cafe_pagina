@@ -6,6 +6,8 @@ const CPistacho = document.getElementById("CPistacho")
 
 btn.addEventListener("click", () => {
 
+    btn.disabled = true
+
     if (CLeche.classList.contains("Bajar")) {
         CLeche.classList.remove("Bajar")
         CLeche.style.opacity = 1
@@ -40,6 +42,9 @@ btn.addEventListener("click", () => {
 
     }
 
+    setTimeout(() => {
+        btn.disabled = false;
+    }, 5000);
 
 
 })

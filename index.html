@@ -9,9 +9,11 @@
     
   </head>
 <body>
-  <div class="todo">
+  <header>
 
-  <div class="encabezado">
+    <div class="todo"> <!-- Div para añadir una animación de aparición a la pagina  -->
+      
+  <div class="encabezado"> <!-- Menu superior  -->
     <div class="barra">
         <h1>MUNDO CAFÉ</h1>
     </div>
@@ -19,11 +21,11 @@
 
       <div class="caja">caja 1</div>
 
-      <div class="caja"><button class="boton" id="especialidades">Nuestas especialidades<div class="flecha"></div></button>
+      <div class="caja"><button class="boton" id="especialidades">Nuestas especialidades</button>
       <div>
-        <div><button id="CLeche" class="espacioboton" style="border-top-left-radius: 30px;"><div class="ola" style="background: rgb(134, 101, 73);"></div><div class="Ccolor" style="background: linear-gradient(to top, rgb(63, 44, 23), rgb(160, 114, 62));"><p>Café con leche</p></div></button></div>
-        <div><button id="CCaramelo"class="espacioboton"><div class="ola2" style="background: rgb(167, 115, 70);"></div><div class="Ccolor" style="background: linear-gradient(to top, rgb(150, 11, 127), rgb(168, 102, 25));"><p>Café con caramelo</p></div></button></div>
-        <div><button id="CPistacho"class="espacioboton" style="border-bottom-right-radius: 30px;"><div class="ola3" style="background: rgb(187, 243, 206);"></div><div class="Ccolor" style="background: linear-gradient(to top, rgb(110, 196, 143), rgb(111, 202, 102));"><p>Café con caramelo</p></div></button></div>
+        <div><button onclick="location.href='#Cafe_con_leche'" id="CLeche" class="espacioboton" style="border-top-left-radius: 30px;"><div class="ola" style="background: rgb(134, 101, 73);"></div><div class="Ccolor" style="background: linear-gradient(to top, rgb(63, 44, 23), rgb(160, 114, 62));"><p>Café con leche</p></div></button></div>
+        <div><button onclick="location.href='#Cafe_con_caramelo'" id="CCaramelo"class="espacioboton"><div class="ola2" style="background: rgb(167, 115, 70);"></div><div class="Ccolor" style="background: linear-gradient(to top, rgb(150, 11, 127), rgb(168, 102, 25));"><p>Café con caramelo</p></div></button></div>
+        <div><button onclick="location.href='#Cafe_con_pistacho'" id="CPistacho"class="espacioboton" style="border-bottom-right-radius: 30px;"><div class="ola3" style="background: rgb(187, 243, 206);"></div><div class="Ccolor" style="background: linear-gradient(to top, rgb(110, 196, 143), rgb(111, 202, 102));"><p>Café con pistacho</p></div></button></div>
       </div>
       
       </div>
@@ -32,19 +34,22 @@
 
         <div class="caja_A"> Bienvenid@, aquí probaras el mejor café</div>
         <div class="caja_B">
-            <img class="ImagenTamaño" src="Imagenes/Logo_taza.jpg" alt="Una vuena taza de café" style="border-radius: 10px;">
-          </div>
-
+          <img class="ImagenTamaño" src="Imagenes/Logo_taza.jpg" alt="Una vuena taza de café" style="border-radius: 10px;">
+        </div>
+        
       </div>
-
+      
     </div>
-
+    
   </div>
+</header>
+<!--&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& Primer apartado que habla de como empezo mundo café y tiene un modelo 3D&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&   -->
+  <main>
 
-  <div class="Apartado">
-    <div class="grid_espacio">
-      <div>
-        <div class="Fondo_Blanco"><h2>MUNDO CAFÉ, ¿como empezo?</h2></div>
+    <section class="Apartado">
+      <div class="grid_espacio">
+      <article>
+        <div class="Fondo_Blanco"><h2>MUNDO CAFÉ, ¿como empezó?</h2></div>
         <div class="Fondo_Blanco" style="width: auto; height: auto; margin-top: 10px; padding: 20px; line-height: 140%;">
           <p>Mundo Café nació cuando Rogelio Moreno, hijo de una familia cafetalera de montaña, se dio cuenta de que los pequeños productores estaban perdiendo espacio frente al café industrial y que los consumidores ya no conocían el origen real de lo que bebían.
 
@@ -52,7 +57,7 @@ Con la intención de rescatar las tradiciones de cultivo, asegurar un pago justo
 
 Hoy, Mundo Café existe para dar valor al trabajo artesanal, preservar métodos sostenibles y acercar historias reales a cada taza.</p>
         </div>
-      </div>
+      </article>
       
       <div class="Derecha_float">
         <p></p>
@@ -65,41 +70,102 @@ Hoy, Mundo Café existe para dar valor al trabajo artesanal, preservar métodos 
           </model-viewer>
         </div>
     </div>
+    
+    
+  </section>
+  <!--&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& Segundo Apartado que habla del café con leche&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&   -->
+
+    <section class="Apartado"  id="Cafe_con_leche">
+      <div class="grid_espacio">
+        <div>    <div class="Vaso_generico" style="margin-top: 10px;">
+
+          <div class="tapa"></div>
+          <div class="vaso">
+            <div class="cafe" style="    background: linear-gradient(to top, #361515, #2e0a0a);"><p class="texto2"></p></div>
+            <div class="esfera" style="background-color: rgba(46, 10, 10);"></div>
+            <div class="esfera" style="left: 20%; background-color: rgba(46, 10, 10);"></div>
+            <div class="esfera" style="left: 40%; background-color: rgba(46, 10, 10);"></div>
+            <div class="esfera" style="left: 67%; background-color: rgba(46, 10, 10);"></div>
+            <div class="texto"><p></p></div>
+            
+          </div>
+        </div>
+      </div>
+        <article>
+          <div class="Fondo_Blanco"><h2>Un clásico, el café con leche</h2></div>
+          <div class="Fondo_Blanco" style="width: auto; height: auto; margin-top: 10px; padding: 20px; line-height: 140%;">
+            <p>Descubre el equilibrio perfecto entre intensidad y suavidad. Nuestro Café con Leche Mundo Café combina un espresso artesanal, preparado con granos seleccionados de altura, con leche fresca vaporizada hasta lograr una textura cremosa y envolvente. El resultado es una bebida cálida, armoniosa y reconfortante, ideal para empezar el día con energía o disfrutar una pausa llena de sabor. Cada sorbo revela notas de cacao y un toque natural de dulzura que conquista incluso a los paladares más exigentes.</p>
+            <p>Disfruta un clásico que eleva tus momentos.</p>
+            <p>Mundo Café: sabor que abraza.</p></div>
+        </article>
+
+      </div>
 
 
+    </section>
 
+<!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& Tercer apartado que habla del café con caramelo&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&  -->
+    <section class="Apartado" id="Cafe_con_caramelo">
+      <div class="grid_espacio">
+        <article>
+          <div class="Fondo_Blanco"><h2>Amarás el café con caramelo</h2></div>
+          <div class="Fondo_Blanco" style="width: auto; height: auto; margin-top: 10px; padding: 20px; line-height: 140%;">
+            <p>Déjate conquistar por el equilibrio perfecto entre la intensidad de un buen café y la suavidad irresistible del caramelo. En Mundo Café hemos creado una experiencia pensada para los que disfrutan de los pequeños placeres: un café aromático, con cuerpo, y un toque dulce que envuelve cada sorbo.</p>
+            <p>Nuestro café con caramelo es ideal para cualquier momento del día, ya sea para empezar la mañana con energía o para regalarte una pausa especial. El aroma, el sabor y la cremosidad se combinan para ofrecerte un instante único, lleno de calidez y carácter</p>
+            <p>Mundo Café</p>
+            <p>Porque cada café cuenta una historia… y esta sabe a caramelo.</p>
+          </div>
+        </article>
+        <div class="Vaso_generico, Derecha_float" style="margin-top: 10px; ">
+
+        <div class="tapa"></div>
+        <div class="vaso">
+            <div class="cafe" style="background: linear-gradient(to top, #301912, #af6715);"><p class="texto2"></p></div>
+            <div class="esfera" style="background-color: #af6715;"></div>
+            <div class="esfera" style="left: 20%; background-color: #af6715;"></div>
+            <div class="esfera" style="left: 40%; background-color: #af6715;"></div>
+            <div class="esfera" style="left: 67%; background-color: #af6715;"></div>
+            <div class="texto"><p></p></div>
+            
+          </div>
     </div>
 
-    <div class="Apartado">
+      </div>
+    </section>
+
+    
+    
+<!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& Cuarto apartado que habla del cafe con pistacho&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&  -->
+    <section class="Apartado"  id="Cafe_con_pistacho">
       <div class="grid_espacio">
         <div>    <div class="Vaso_generico" style="margin-top: 10px;">
 
         <div class="tapa"></div>
         <div class="vaso">
-            <div class="cafe"><p class="texto2"></p></div>
-            <div class="esfera"></div>
-            <div class="esfera" style="left: 20%;"></div>
-            <div class="esfera" style="left: 40%;"></div>
-            <div class="esfera" style="left: 67%;"></div>
+            <div class="cafe" style="    background: linear-gradient(to top, #63552a, #8ae062);"><p class="texto2"></p></div>
+            <div class="esfera" style="background-color: #8ae062;"></div>
+            <div class="esfera" style="left: 20%; background-color: #8ae062;"></div>
+            <div class="esfera" style="left: 40%; background-color: #8ae062;"></div>
+            <div class="esfera" style="left: 67%; background-color: #8ae062"></div>
             <div class="texto"><p></p></div>
             
         </div>
-    </div></div>
-        <div>
-          <div class="Fondo_Blanco"><h2>Un clasico, el café con leche</h2></div>
-          <div class="Fondo_Blanco" style="width: auto; height: auto; margin-top: 10px; padding: 20px; line-height: 140%;"><p>Descubre el equilibrio perfecto entre intensidad y suavidad. Nuestro Café con Leche Mundo Café combina un espresso artesanal, preparado con granos seleccionados de altura, con leche fresca vaporizada hasta lograr una textura cremosa y envolvente.
-
-El resultado es una bebida cálida, armoniosa y reconfortante, ideal para empezar el día con energía o disfrutar una pausa llena de sabor. Cada sorbo revela notas de cacao, caramelo y un toque natural de dulzura que conquista incluso a los paladares más exigentes.
-
-</p><p>Disfruta un clásico que eleva tus momentos.
-</p><p>Mundo Café: sabor que abraza.</p></div>
-        </div>
+    </div>
+  </div>
+        <article class="Derecha_float">
+          <div class="Fondo_Blanco"><h2>Un sabor muy especial... Café con pistacho</h2></div>
+          <div class="Fondo_Blanco" style="width: auto; height: auto; margin-top: 10px; padding: 20px; line-height: 140%;">
+            <p>Descubre la fusión perfecta entre la intensidad de nuestro café artesanal y el delicado sabor del pistacho. En Mundo Café hemos creado una experiencia única, pensada para quienes buscan disfrutar de cada sorbo con un toque diferente y sofisticado.</p>
+            <p>Nuestro café con pistacho combina notas suaves y ligeramente tostadas del fruto con la riqueza del café recién molido, creando una bebida aromática, cremosa y llena de carácter. Es ideal para esos momentos en los que quieres relajarte y saborear algo especial, sin prisas, dejando que cada matiz te envuelva.</p>
+            <p>Mundo Café</p>
+            <p>Cada taza de pistacho es una invitación a descubrir un sabor inesperadamente delicioso.</p></div>
+          </article>
 
       </div>
 
 
-    </div>
-
+    </section>
+  </main>
 
   </div> <!-- No tocar, este es el div de toda la pagina para insertar una animación de aparición.-->
 
