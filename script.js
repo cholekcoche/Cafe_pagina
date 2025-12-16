@@ -8,6 +8,10 @@ btn.addEventListener("click", () => {
 
     btn.disabled = true
 
+    CLeche.classList.remove("nopoint")
+    CCaramelo.classList.remove("nopoint")
+    CPistacho.classList.remove("nopoint")
+
     if (CLeche.classList.contains("Bajar")) {
         CLeche.classList.remove("Bajar")
         CLeche.style.opacity = 1

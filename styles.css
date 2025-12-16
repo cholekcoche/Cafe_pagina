@@ -170,11 +170,55 @@ body {
   padding-left: 10px;
 }
 
+footer{
+  width: auto;
+  height: 400px;
+  background-color: #542211;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.flex_box{
+  display: flex;
+  gap: 5rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.flex_column{
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+  justify-content: space-between;
+  
+  
+}
+
+
+.content{
+  color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 15px;
+  text-align: center;
+  line-height: 20px;
+  height: 50px;
+  width: auto;
+  font-size: large;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-bottom: 10px;
+}
+
+
+
+
 /* G */
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* 3 columnas iguales */
     gap: 1px; /* espacio entre cajas */
     border-color: black;
     border-width: thin;
@@ -320,6 +364,9 @@ h1 {
   
 
 /* S */
+.nopoint{
+  pointer-events: none;
+}
 
 .SinFondo {
   background-color: rgba(0, 0, 0, 1);
