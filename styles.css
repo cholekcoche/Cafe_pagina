@@ -96,6 +96,9 @@ body {
 .caja_A {
   padding: 10px;
   margin-bottom: auto;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: larger;
+  margin: 5%;
 }
 
 .caja_B{
@@ -114,7 +117,32 @@ body {
   color: white;
   font-family: 'Courier New', Courier, monospace;
   animation: colorcafe 8s linear infinite;
+
 }
+
+.columna{
+
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2em;
+  height: auto;
+  width: auto;
+  margin: 5%;
+  
+}
+
+.items {
+
+  padding: 10%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: auto;
+  height: auto;
+  width: auto;
+
+}
+
 
 /* D */
 
@@ -172,10 +200,14 @@ body {
 
 footer{
   width: auto;
-  height: 400px;
+  height: auto;
   background-color: #542211;
   overflow: hidden;
   margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ 
 }
 
 .flex_box{
@@ -190,8 +222,9 @@ footer{
 .flex_column{
   display: flex;
   flex-direction: column;
-  gap: 5em;
+  
   justify-content: space-between;
+  
   
   
 }
@@ -199,16 +232,16 @@ footer{
 
 .content{
   color: white;
-  margin-left: 20px;
-  margin-right: 20px;
+
   padding: 15px;
   text-align: center;
-  line-height: 20px;
-  height: 50px;
+  margin: auto;
+  height: auto;
   width: auto;
-  font-size: large;
+  font-size:xx-large;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  margin-bottom: 10px;
+  padding: 5%;
+
 }
 
 
@@ -241,6 +274,10 @@ h1 {
     color: black;
     text-align: center;
     font-family: "TipografiaTitulo", cursive, sans-serf;
+  }
+
+h3 {
+    font-size: xx-large;
   }
   
   /* I */
